@@ -1,0 +1,10 @@
+{
+  "name": "@zovo/ext-i18n-framework",
+  "version": "1.0.0",
+  "description": "Full i18n framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["chrome-extension", "zovo"],
+  "author": "Zovo Tools",
+  "license": "MIT"
+}
