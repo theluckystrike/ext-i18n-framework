@@ -1,6 +1,8 @@
 /**
- * ext-i18n-framework
+ * ext-i18n-framework - Internationalization framework for Chrome extensions
+ * @module
  */
+
 export class ext_i18n_framework {
   constructor() {}
 }
