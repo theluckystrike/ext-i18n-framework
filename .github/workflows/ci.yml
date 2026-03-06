@@ -7,19 +7,21 @@ on:
     branches: [main, master]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20]
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Node.js
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
       
       - name: Install dependencies
         run: npm install
       
-      - name: Verify package
-        run: |
-          node -e "require('./lib/index.js')" 2>/dev/null || echo "No main export"
+      - name: Run tests
+        run: npm test

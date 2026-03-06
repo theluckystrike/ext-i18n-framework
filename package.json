@@ -1,14 +1,17 @@
 {
   "name": "@zovo/ext-i18n-framework",
   "version": "1.0.0",
-  "description": "Full i18n framework",
+  "description": "Internationalization framework for Chrome extensions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
   "keywords": [
     "chrome-extension",
     "zovo"
   ],
-  "author": "Zovo Tools",
+  "author": "theluckystrike",
   "license": "MIT",
   "repository": {
     "type": "git",
